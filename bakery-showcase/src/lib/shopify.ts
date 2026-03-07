@@ -71,7 +71,7 @@ Preferred Time:
 Payment: Cash on Delivery
 Notes: 
 
-JazakAllah!`,
+JazakAllah!`, 
 
     pizza: `Assalam o Alaikum! *I'd love to order your Mini Pizza!*
 
