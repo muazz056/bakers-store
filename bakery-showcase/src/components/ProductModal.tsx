@@ -24,6 +24,8 @@ export default function ProductModal({ product, isOpen, onClose }: ProductModalP
   const [showValidationErrors, setShowValidationErrors] = useState(false);
   const [showTimeInfo, setShowTimeInfo] = useState(false);
 
+  const EXPECTED_TIME_LABEL = 'Discuss on WhatsApp through chat';
+
   const isBrownie = product?.id === 'brownie';
 
   useEffect(() => {
@@ -41,11 +43,7 @@ export default function ProductModal({ product, isOpen, onClose }: ProductModalP
     setCustomerName('');
     setPhone('');
     setShowValidationErrors(false);
-    if (product?.prepTime) {
-      setPreferredTime(`${product.prepTime} minutes`);
-    } else {
-      setPreferredTime('');
-    }
+    setPreferredTime(EXPECTED_TIME_LABEL);
   }, [product]);
 
   useEffect(() => {
@@ -85,7 +83,7 @@ Total: Rs. ${totalPrice.toLocaleString()}
 Name: ${customerName || ''}
 Phone: ${phone || ''}
 Address: ${address || ''}
-Preferred Time: ${preferredTime || ''}
+Preferred Time: ${EXPECTED_TIME_LABEL}
 
 Payment: Cash on Delivery
 Notes: ${notes || ''}
@@ -444,11 +442,11 @@ JazakAllah!`;
                     </button>
                   </div>
                   <p className="text-sm text-chocolate-700 dark:text-cream-200">
-                    {preferredTime || (product.prepTime ? `${product.prepTime} minutes` : 'Will be shared by our team.')}
+                    {EXPECTED_TIME_LABEL}
                   </p>
                   {showTimeInfo && (
                     <div className="absolute right-0 top-7 z-20 w-52 rounded-lg bg-chocolate-900 px-3 py-2 text-[11px] text-cream shadow-lg">
-                      This is the time taken for the preparation.
+                      We&apos;ll confirm the exact time with you on WhatsApp chat.
                     </div>
                   )}
                 </div>
@@ -490,12 +488,10 @@ JazakAllah!`;
                       {notes}
                     </p>
                   )}
-                  {preferredTime && (
-                    <p>
-                      <span className="font-semibold">Expected Time:</span>{' '}
-                      {preferredTime}
-                    </p>
-                  )}
+                  <p>
+                    <span className="font-semibold">Expected Time:</span>{' '}
+                    {EXPECTED_TIME_LABEL}
+                  </p>
                 </div>
               </div>
             </div>
