@@ -18,30 +18,30 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Nabia's Eatry | Freshly Baked. Perfectly Crafted.",
+  title: "Nabia's Eatery | Freshly Baked. Perfectly Crafted.",
   description: 'Discover our handcrafted premium cupcakes, cookies, and signature kunafa chocolate bars. Made with fresh ingredients and baked with love.',
-  keywords: ['bakery', 'cupcakes', 'cookies', 'kunafa', 'chocolate', 'premium desserts', 'handcrafted', "nabia's eatry"],
-  authors: [{ name: "Nabia's Eatry" }],
-  creator: "Nabia's Eatry",
+  keywords: ['bakery', 'cupcakes', 'cookies', 'kunafa', 'chocolate', 'premium desserts', 'handcrafted', "nabia's eatery"],
+  authors: [{ name: "Nabia's Eatery" }],
+  creator: "Nabia's Eatery",
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: 'https://your-bakery.com',
-    siteName: "Nabia's Eatry",
-    title: "Nabia's Eatry | Freshly Baked. Perfectly Crafted.",
+    siteName: "Nabia's Eatery",
+    title: "Nabia's Eatery | Freshly Baked. Perfectly Crafted.",
     description: 'Discover our handcrafted premium cupcakes, cookies, and signature kunafa chocolate bars.',
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: "Nabia's Eatry - Freshly Baked Desserts",
+        alt: "Nabia's Eatery - Freshly Baked Desserts",
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Nabia's Eatry | Freshly Baked. Perfectly Crafted.",
+    title: "Nabia's Eatery | Freshly Baked. Perfectly Crafted.",
     description: 'Discover our handcrafted premium cupcakes, cookies, and signature kunafa chocolate bars.',
     images: ['/og-image.jpg'],
   },

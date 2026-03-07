@@ -11,13 +11,12 @@ interface ReducedMotionContextType {
 const ReducedMotionContext = createContext<ReducedMotionContextType | undefined>(undefined);
 
 export function ReducedMotionProvider({ children }: { children: ReactNode }) {
-  const [reducedMotion, setReducedMotionState] = useState(false);
+  const [reducedMotion, setReducedMotionState] = useState(true);
 
   useEffect(() => {
-    // Check for saved preference or system preference
+    // Check for saved preference, otherwise default to reduced motion (animations off)
     const savedPreference = localStorage.getItem('reducedMotion');
-    const systemPreference = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    const initialValue = savedPreference !== null ? savedPreference === 'true' : systemPreference;
+    const initialValue = savedPreference !== null ? savedPreference === 'true' : true;
     setReducedMotionState(initialValue);
     
     // Update CSS custom property

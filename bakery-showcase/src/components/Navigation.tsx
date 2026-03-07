@@ -61,11 +61,11 @@ export default function Navigation() {
           >
             <img 
               src="/assets/images/logo.svg" 
-              alt="Nabia's Eatry" 
+              alt="Nabia's Eatery" 
               className="h-10 w-auto md:h-12"
             />
             <span className="font-serif text-xl md:text-2xl font-bold text-chocolate dark:text-gold">
-              Nabia's Eatry
+              Nabia's Eatery
             </span>
           </a>
 

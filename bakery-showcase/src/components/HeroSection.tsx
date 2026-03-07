@@ -247,7 +247,7 @@ export default function HeroSection() {
           {reducedMotion && isLoaded && (
             <img
               src="/assets/animations/ezgif-frame-001.jpg"
-              alt="Nabia's Eatry"
+              alt="Nabia's Eatery"
               className="absolute inset-0 w-full h-full object-cover"
             />
           )}

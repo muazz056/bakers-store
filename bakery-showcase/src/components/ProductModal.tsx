@@ -71,7 +71,7 @@ export default function ProductModal({ product, isOpen, onClose }: ProductModalP
             .join(', ')
         : '';
 
-    const message = `Assalam o Alaikum! *I'd love to order from Nabia's Eatry!*
+    const message = `Assalam o Alaikum! *I'd love to order from Nabia's Eatery!*
 
 *Order Details:*
 Product: ${product.name}

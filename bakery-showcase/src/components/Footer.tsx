@@ -24,11 +24,11 @@ export default function Footer() {
             <div className="flex items-center gap-3 mb-4">
               <img 
                 src="/assets/images/logo.svg" 
-                alt="Nabia's Eatry" 
+                alt="Nabia's Eatery" 
                 className="h-12 w-auto"
               />
               <h3 className="font-serif text-2xl font-bold text-gold">
-                Nabia's Eatry
+                Nabia's Eatery
               </h3>
             </div>
             <p className="text-cream-300 leading-relaxed mb-6">
@@ -165,7 +165,7 @@ export default function Footer() {
         <div className="border-t border-cream/10 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-cream-400 text-sm">
-              &copy; {currentYear} Nabia's Eatry. All rights reserved.
+              &copy; {currentYear} Nabia's Eatery. All rights reserved.
             </p>
             <div className="flex items-center gap-6 text-sm text-cream-400">
               <a href="#" className="hover:text-gold transition-colors duration-300">
