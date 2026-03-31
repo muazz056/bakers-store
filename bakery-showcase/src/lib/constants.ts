@@ -69,7 +69,7 @@ export const PRODUCTS: Product[] = [
     name: 'Sundae',
     description: 'Creamy ice cream sundae with toppings.',
     fullDescription: 'Creamy ice cream sundae topped with chocolate sauce, nuts, sprinkles, and a cherry on top. Made with premium ice cream and fresh toppings.',
-    image: '/assets/images/sundae.png',
+    image: '/assets/images/sundae.jpeg',
     category: 'desserts',
     prepTime: 10, // 10 minutes
     priceOptions: [
@@ -96,7 +96,7 @@ export const PRODUCTS: Product[] = [
     name: 'Mini Pizza',
     description: 'Freshly baked mini pizza with premium toppings.',
     fullDescription: 'Our mini pizzas feature a crispy crust topped with premium ingredients. Perfect for snacks, parties, or when you want a little something delicious. Each mini pizza is individually crafted and baked fresh.',
-    image: '/assets/images/pizza.png',
+    image: '/assets/images/pizza.jpeg',
     category: 'savory',
     prepTime: 30, // 30 minutes
     priceOptions: [
@@ -108,7 +108,7 @@ export const PRODUCTS: Product[] = [
     name: 'Chicken Bread',
     description: 'Soft bread stuffed with seasoned chicken.',
     fullDescription: 'Soft bread stuffed with seasoned chicken filling, herbs, and spices. A savory delight for any time of the day. Perfect for breakfast, lunch, or snacks!',
-    image: '/assets/images/chicken bread.png',
+    image: '/assets/images/chicken bread.jpeg',
     category: 'savory',
     prepTime: 45, // 45 minutes
     priceOptions: [
